@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>UserManager</display-name>
+  
+  <servlet>
+    <servlet-name>cadastrar</servlet-name>
+    <servlet-class>projetoWebDSM.controller.ServletCadastrarUsuario</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>buscar</servlet-name>
+    <servlet-class>projetoWebDSM.controller.ServletBuscarUsuario</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>modificar</servlet-name>
+    <servlet-class>projetoWebDSM.controller.ServletModificarUsuario</servlet-class>
+  </servlet>
+    
+    <servlet>
+    <servlet-name>alterar</servlet-name>
+    <servlet-class>projetoWebDSM.controller.ServletAlterarUsuario</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>cadastrar</servlet-name>
+    <url-pattern>/cadastrarUsuario</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>buscar</servlet-name>
+    <url-pattern>/consultarUsuario</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>modificar</servlet-name>
+    <url-pattern>/modificarUsuario</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>alterar</servlet-name>
+    <url-pattern>/alterarUsuario</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletBuscarUsuario</display-name>
+    <servlet-name>ServletBuscarUsuario</servlet-name>
+    <servlet-class>projetoWebDSM.controller.ServletBuscarUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletBuscarUsuario</servlet-name>
+    <url-pattern>/ServletBuscarUsuario</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ServletAlterarUsuario</display-name>
+    <servlet-name>ServletAlterarUsuario</servlet-name>
+    <servlet-class>projetoWebDSM.controller.ServletAlterarUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAlterarUsuario</servlet-name>
+    <url-pattern>/ServletAlterarUsuario</url-pattern>
+  </servlet-mapping>
+</web-app>

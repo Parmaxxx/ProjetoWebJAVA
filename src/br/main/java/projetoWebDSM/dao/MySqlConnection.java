@@ -15,7 +15,7 @@ public class MySqlConnection {
 			e.printStackTrace();
 		}
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetoWebDSM", "root","F31H0kP41");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetoWebDSM", "root","senha");
 		} catch (Exception e) {
 			e.printStackTrace();}
 		
